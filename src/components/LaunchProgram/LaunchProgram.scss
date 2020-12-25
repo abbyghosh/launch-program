@@ -1,0 +1,109 @@
+.body_container {
+  display: flex;
+}
+.sidebar_filters {
+  background-color: #fff;
+  min-width: 170px;
+  font-size: 12px;
+
+  padding: 5px 6px;
+  .filter_buttons {
+    background-color: #c5e09b;
+    padding: 2px 12px;
+    border-radius: 3px;
+    margin: 2px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .filter_buttons_active {
+    background-color: #7cba01;
+  }
+  .filters_header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .filters_header span {
+    border-bottom: 2px solid black;
+  }
+}
+
+.filter_go_flex {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.missions_card {
+  padding: 15px;
+  background-color: white;
+  .mission_img {
+    width: 180px;
+    background: #f2f2f2;
+  }
+}
+.grid {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 50%));
+  justify-content: space-around; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40%);
+  justify-content: space-around;
+}
+main {
+  margin: 20px;
+  margin-top: 0px;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25%);
+
+  /* justify-content: center;*/
+  /*  display: flex;
+  flex-flow: wrap; */
+}
+
+/* Media queries start here */
+/* L */
+@media screen and (min-width: 1440px) {
+  .body_container {
+    max-width: 1400px;
+    justify-content: center;
+  }
+  main {
+    grid-template-columns: repeat(auto-fit, 25%);
+    justify-content: center;
+  }
+}
+/* L */
+@media screen and (max-width: 1440px) {
+  main {
+    grid-template-columns: repeat(auto-fit, 25%);
+  }
+}
+/* M */
+@media screen and (max-width: 1024px) {
+  main {
+    grid-template-columns: repeat(auto-fit, 50%);
+  }
+}
+/* S */
+@media screen and (max-width: 700px) {
+  main {
+    grid-template-columns: repeat(auto-fit, 100%);
+  }
+  .body_container {
+    display: inline;
+  }
+}
+/* @media screen and (max-width: 700px) {
+  .body_container {
+    display: inline;
+  }
+  .sidebar_filters {
+    width: 700px;
+    background-color: lightblue;
+  }
+}
+ */
