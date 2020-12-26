@@ -36,7 +36,7 @@ function ProgramsDetailsCard({ allLaunchList, loading }) {
               </div>
               <div>
                 <h5>Successful Launch:&nbsp;</h5>
-                <span>{list.launch_success.toString()}</span>
+                <span>{list.launch_success?.toString()}</span>
               </div>
               <div>
                 <h5>Successful Landing:&nbsp;</h5>
