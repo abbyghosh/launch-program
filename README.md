@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# SpaceX Launch Programs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An application to get SpaceX launch programs along with filters like launch year, successful launch and successful landing, built with React (create-react-app). Its is reponsive for Desktop, Tablet and Mobile.
+
+## One added feature that I have gived is the "Scroll to top" when the user scrolls down.
+
+## Installation and Setup Instructions
+Clone down this repository. You will need node and npm installed globally on your machine.
+
+Installation:
+### npm install
+
+To Start Server:
+### npm start
+
+To Visit App:
+[https://launch-program.herokuapp.com/](https://launch-program.herokuapp.com/).
 
 ## Available Scripts
 
