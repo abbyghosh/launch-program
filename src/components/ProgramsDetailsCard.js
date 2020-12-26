@@ -14,6 +14,12 @@ function ProgramsDetailsCard({ allLaunchList, loading }) {
                   ${list.links.mission_patch} 3x`}
                 alt={list.mission_name}
                 className="mission_img"
+                onError={(e) => {
+                  setTimeout(() => {
+                    e.target.onerror = null;
+                    e.target.src = list.links.mission_patch_small;
+                  }, 500);
+                }}
               />
               <figcaption>
                 {list.mission_name} #{list.flight_number}
