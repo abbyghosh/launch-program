@@ -108,13 +108,14 @@ main {
 }
 .go_top {
   position: fixed;
-  bottom: 5px;
+  bottom: 10px;
   right: 30px;
   background: #c5e09b9e;
   padding: 3px 10px;
   border-radius: 15px;
   font-size: 12px;
   font-weight: 600;
+  user-select: none;
 }
 footer {
   text-align: center;
@@ -170,6 +171,13 @@ footer {
   }
   .missions_card {
     padding: 25px;
+    width: auto;
+  }
+  .go_top {
+    bottom: 10px;
+    padding: 7px 20px;
+  }
+  .no_data {
     width: auto;
   }
 }
