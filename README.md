@@ -23,6 +23,6 @@ This was given to me as an assignment. The two important aspects of the assigmen
 
 * I have an array `years` that would be getting the years starting from 2006 to current from a function `getYears()`. I have then lopped over the array to display it in the filters section. I have used grid to distribute it into two sections.  
 * To maintain the pixel ratio I have used `srcset` attribute present in `img` tag.
-* For making it responsive I have used mediaquery and grid.
+* For making it responsive I have used mediaquery and CSS grid.
 * When clicked on a filter until the service response is received, "*Fetching Data...*" is displayed and if the requested filter is empty "*There are no data for the selected filter*" is being displayed (try for year 2011).
 * As an addition feature I have added "*Scroll to top*" when the user is down by 300px from top.
