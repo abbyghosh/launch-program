@@ -1,13 +1,22 @@
 .body_container {
   display: flex;
 }
+
+/* Sidebar CSS */
 .sidebar_filters {
   background-color: #fff;
   min-width: 170px;
   font-size: 12px;
 
+  border-radius: 5px;
   padding: 5px 6px;
+
+  margin-bottom: 20px;
+  /* margin: 10px;
+  margin-right: 0px; */
+  height: fit-content;
   .filter_buttons {
+    max-width: 100px;
     background-color: #c5e09b;
     padding: 2px 12px;
     border-radius: 3px;
@@ -20,12 +29,18 @@
   }
   .filters_header {
     text-align: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    margin: 15px 0px;
   }
   .filters_header span {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #a5a5a5;
+    display: inline-block;
+    width: 70%;
+    color: #484848;
+    font-size: 12px;
   }
 }
+/* Sidebar End */
 
 .filter_go_flex {
   display: flex;
@@ -33,23 +48,50 @@
   justify-content: space-around;
   margin: 5px;
 }
-
+/* Card CSS */
 .missions_card {
   padding: 15px;
   background-color: white;
+  display: grid;
+  /* justify-content: center; */
+  width: 100%;
+
+  border-radius: 5px;
+  /* margin: 0px 10px;
+  margin-bottom: 10px; */
   .mission_img {
-    width: 180px;
+    width: 100%;
     background: #f2f2f2;
   }
-}
-.grid {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40%, 50%));
-  justify-content: space-around; */
+  figcaption {
+    color: #4a4f8a;
 
+    font-weight: 700;
+    margin: 10px 0px;
+  }
+
+  .missionId_ist {
+    position: relative;
+    left: 30px;
+    li {
+      color: #464f93;
+    }
+  }
+  h4,
+  h5 {
+    display: inline-block;
+    margin: 5px 0px;
+    + span {
+      color: #464f93;
+    }
+  }
+} /* Card END */
+.grid_fit {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 40%);
+  /* grid-template-columns: repeat(auto-fit, 40%); */
+  grid-template-columns: auto auto;
   justify-content: space-around;
+  grid-gap: 10px 0px;
 }
 main {
   margin: 20px;
@@ -57,53 +99,77 @@ main {
 
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 25%);
+  /* grid-template-columns: repeat(auto-fit, 25%); */
 
-  /* justify-content: center;*/
+  grid-gap: 20px 50px;
+  justify-content: center;
   /*  display: flex;
   flex-flow: wrap; */
+}
+.go_top {
+  position: fixed;
+  bottom: 5px;
+  right: 30px;
+  background: #c5e09b9e;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+footer {
+  text-align: center;
+  margin: 20px 0px;
+  :first-child {
+    font-weight: 700;
+  }
+}
+.no_data {
+  width: 70vw;
+  text-align: center;
+  font-weight: 600;
 }
 
 /* Media queries start here */
 /* L */
 @media screen and (min-width: 1440px) {
   .body_container {
-    max-width: 1400px;
     justify-content: center;
   }
   main {
-    grid-template-columns: repeat(auto-fit, 25%);
-    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, 25%);*/
+    grid-template-columns: auto auto auto auto;
   }
 }
 /* L */
 @media screen and (max-width: 1440px) {
   main {
-    grid-template-columns: repeat(auto-fit, 25%);
+    /* grid-template-columns: repeat(auto-fit, 25%); */
+    grid-template-columns: auto auto auto auto;
   }
 }
 /* M */
 @media screen and (max-width: 1024px) {
   main {
-    grid-template-columns: repeat(auto-fit, 50%);
+    /* grid-template-columns: repeat(auto-fit, 50%); */
+    grid-template-columns: auto auto;
   }
 }
 /* S */
 @media screen and (max-width: 700px) {
+  body {
+    padding: 20px;
+  }
+  .body_container {
+    display: inline;
+  }
   main {
     grid-template-columns: repeat(auto-fit, 100%);
+    margin: 0px;
+    grid-gap: 20px;
+    /* grid-template-columns: auto; */
   }
-  .body_container {
-    display: inline;
-  }
-}
-/* @media screen and (max-width: 700px) {
-  .body_container {
-    display: inline;
-  }
-  .sidebar_filters {
-    width: 700px;
-    background-color: lightblue;
+  .missions_card {
+    padding: 25px;
+    width: auto;
   }
 }
- */
