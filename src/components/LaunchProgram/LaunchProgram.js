@@ -38,10 +38,9 @@ const LaunchProgram = () => {
     services
       .getAllLaunches(year, launchSucess, landingSucess)
       .then((res) => {
-        console.log("Get all response ", res.data);
         setAllLaunchList(res.data);
       })
-      .catch((err) => console.log("get all response error ", err))
+      .catch((err) => alert("Error fetching data ", err))
       .finally(() => setLoading(false));
   }, [filterValues]);
 
