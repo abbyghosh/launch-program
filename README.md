@@ -16,7 +16,6 @@ To Start Server:
 #### `npm start`
 \
 To Visit App:\
-\
 [https://launch-program.herokuapp.com/](https://launch-program.herokuapp.com/)
 
 ## Reflection
