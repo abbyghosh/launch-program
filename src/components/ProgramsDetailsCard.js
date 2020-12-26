@@ -9,6 +9,9 @@ function ProgramsDetailsCard({ allLaunchList, loading }) {
             <figure>
               <img
                 src={list.links.mission_patch_small}
+                srcSet={`${list.links.mission_patch_small} 1x, 
+                  ${list.links.mission_patch} 2x,
+                  ${list.links.mission_patch} 3x`}
                 alt={list.mission_name}
                 className="mission_img"
               />
