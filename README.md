@@ -1,6 +1,6 @@
 # SpaceX Launch Programs
 
-An application to get SpaceX launch programs along with filters like launch year, successful launch and successful landing, built with React (create-react-app). Its is responsive for Desktop, Tablet and Mobile.
+A PWA application to get SpaceX launch programs along with filters like launch year, successful launch and successful landing, built with React (create-react-app). Its is responsive for Desktop, Tablet and Mobile.
 
 ## Installation and Setup Instructions
 
@@ -20,7 +20,8 @@ To Start Server:
 
 \
 To Visit App:\
-[https://launch-program.herokuapp.com/](https://launch-program.herokuapp.com/)
+[https://cranky-babbage-28aa5f.netlify.app/](https://cranky-babbage-28aa5f.netlify.app/)
+<!---[https://launch-program.herokuapp.com/](https://launch-program.herokuapp.com/) -->
 
 ## Reflection
 
@@ -32,4 +33,5 @@ The two important aspects of the assigment was to make it responsive and to load
 - Used `onload` attribute of `img` to retry failed image after 0.5 second.
 - For making it responsive I have used mediaquery and CSS grid.
 - When clicked on a filter until the service response is received, "_Fetching Data..._" is displayed and if the requested filter is empty "_There are no data for the selected filter_" is being displayed (try for year 2011).
+- I have configured it for PWA. On network error it would be redirecting the user to a cached page that would say `Please connect to internet`. 
 - As an addition feature I have added "_Scroll to top_" when the user is down by 300px from top.
