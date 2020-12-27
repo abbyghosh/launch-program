@@ -40,7 +40,7 @@ const LaunchProgram = () => {
       .then((res) => {
         setAllLaunchList(res.data);
       })
-      .catch((err) => alert("Error fetching data ", err))
+      .catch((err) => console.log("Error fetching data ", err))
       .finally(() => setLoading(false));
   }, [filterValues]);
 
