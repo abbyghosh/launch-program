@@ -50,22 +50,24 @@
 }
 /* Card CSS */
 .missions_card {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  /* grid-auto-rows: minmax(110px, auto); */
+
   padding: 15px;
   background-color: white;
-  display: grid;
-  /* justify-content: center; */
   width: 100%;
-
   border-radius: 5px;
-  /* margin: 0px 10px;
-  margin-bottom: 10px; */
+  figure {
+    width: 100%;
+  }
   .mission_img {
     width: 100%;
     background: #f2f2f2;
+    min-height: 215px;
   }
   figcaption {
     color: #4a4f8a;
-
     font-weight: 700;
     margin: 10px 0px;
   }

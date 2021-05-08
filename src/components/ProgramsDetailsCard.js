@@ -1,4 +1,5 @@
 import React from "react";
+import ObserverImage from "./LaunchProgram/ObseverImage";
 
 function ProgramsDetailsCard({ allLaunchList, loading }) {
   return (
@@ -7,7 +8,7 @@ function ProgramsDetailsCard({ allLaunchList, loading }) {
         allLaunchList.map((list) => (
           <section key={list.flight_number} className="missions_card">
             <figure>
-              <img
+              {/* <img
                 src={list.links.mission_patch_small}
                 srcSet={`${list.links.mission_patch_small} 1x, 
                   ${list.links.mission_patch} 2x,
@@ -20,6 +21,12 @@ function ProgramsDetailsCard({ allLaunchList, loading }) {
                     e.target.src = list.links.mission_patch_small;
                   }, 500);
                 }}
+              /> */}
+              <ObserverImage
+                src={list.links.mission_patch_small}
+                srcHigh={list.links.mission_patch}
+                alt={list.mission_name}
+                //styleClass="mission_img"
               />
               <figcaption>
                 {list.mission_name} #{list.flight_number}
